@@ -1,0 +1,54 @@
+/** EL ASTERISCO SIGNIFICA QUE LE APLICA LA PROPIEDAD QUE QUERRAMOS A TODOS LOS 
+ELEMENTOS DEL DOCUMENTO. Pero si especifico particularmente otroas elementos
+los respeta. Ver el caso del div.
+*/
+
+/**
+*{
+    color: darkgoldenrod;
+  }
+*/
+div {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    color: aqua;
+  }
+  /** 
+  tambien se puede
+  h1,h2{
+            border: 10px solid blueviolet;
+            color: greenyellow;
+            width: 300px;
+          }
+  */
+  h1{
+    border: 10px solid blueviolet;
+    color: greenyellow;
+  }
+  li{
+    color: red;
+  }
+
+
+
+#mi_linea_especial{
+    color: blue;
+}
+
+/** vamos a suponer que necesito aplicar a muchas paginas los titulos con el 
+formato de h1, pero tengo otras 2 o 3 páginas que quiero aplicarles otro tipo
+de h1...lo que debo definir es una CLASE....luego lo llamo en el html mediante
+<li class="clase_linea_li">Elemento 2</li>*/
+
+.clase_linea_li{
+    font-weight: bold;
+    color: coral;
+
+}
+
+div h1{ /* dentro del dix TODOS los h1 se comportarán de esta manera**/
+    color: bisque;
+    font-size: 50px;
+}
