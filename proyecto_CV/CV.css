@@ -61,12 +61,9 @@
 
 .imagen_desarrollo{
     padding: 1rem;
-    margin: 20px;
 }
 
 /*Estilos generales*/
-
-
 
 section{
     display: flex;
@@ -107,7 +104,7 @@ h1{
 
 @media screen and (min-widht: 700px){
     .hero_inferior{
-        max-width: 600px;
+       max-width: 600px;
     }
 }
 
