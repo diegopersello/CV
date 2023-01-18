@@ -50,11 +50,11 @@
 
 /*Seccion sobre mi*/
 
-.seccion_sobre_mi{
+.sobre_mi{
     padding: 10px;
 }
 
-.seccion_sobre_mi .contenedor{
+.sobre_mi .contenedor{
     max-width: 600px;
     text-align: center;
 }
@@ -63,6 +63,33 @@
     padding: 1rem;
 }
 
+/* Experiencia */
+
+.experiencia{
+    padding: 40px;
+
+}
+.experiencia span{
+    font-size: 2.5rem;
+    color:whitesmoke;
+    background-color: black;
+    padding: 8px;
+    border-radius: 50%;
+}
+.experiencia .row div{
+    height: 250px;
+    background-color: rgb(226, 180, 226);
+    border: 3px solid;
+}
+.experiencia_titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.columna{
+    
+}
 /*Estilos generales*/
 
 section{
@@ -82,6 +109,10 @@ h1{
     color: white;
     background: #1b1b32;
 
+}
+.seccion_clara{
+    color: #1b1b32;
+    background-color: white;
 }
 .seccion_titulo{
     font-size: 2rem;
@@ -107,4 +138,13 @@ h1{
        max-width: 600px;
     }
 }
+
+/*iconos online de Google Icons*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
 
