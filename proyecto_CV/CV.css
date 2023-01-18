@@ -21,10 +21,12 @@
 
 /*seccion hero (principal)*/
 
-.perfil
+.imagen_perfil
 {
     border-radius: 50%;
     background-size: cover;
+    margin: 20px;
+    border: black;
 }
 
 .hero
@@ -35,29 +37,77 @@
 
 }
 
+.hero_principal
+{
+    padding: 1rem;
+}
+
+.hero_principal h2{
+    font-size: 1.5rem;
+    color: rgb(59, 61, 61);
+    
+}
+
+/*Seccion sobre mi*/
+
+.seccion_sobre_mi{
+    padding: 10px;
+}
+
+.seccion_sobre_mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+.imagen_desarrollo{
+    padding: 1rem;
+    margin: 20px;
+}
+
 /*Estilos generales*/
 
-section
-{
+
+
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-h1
-{
+h1{
     font-size: 2.5rem; /*rem: 2.5* el tamaño de letra del elemento raíz*/
+    font-family: 'Rubik Gemstones', cursive;
+
+}
+
+.seccion_oscura{
+    color: white;
+    background: #1b1b32;
+
+}
+.seccion_titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Gemstones', cursive;
+}
+
+.seccion_texto{
+    font-size: 1rem;
 
 }
 
 /* Adaptable responsivo*/
 /*con este media query escondo el ícono en pantallas pequeñas para que no quede mal*/
-@media screen and (max-width:767px)
-{
+@media screen and (max-width:767px){
     .navbar-brand{
         display: none;
     }
 }
 
+@media screen and (min-widht: 700px){
+    .hero_inferior{
+        max-width: 600px;
+    }
+}
 
