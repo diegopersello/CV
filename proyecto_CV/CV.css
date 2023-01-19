@@ -5,7 +5,8 @@
 .navbar
 {
     padding: 2rem;
-    background-color: rgb(193, 215, 244);
+    /*background-color: rgb(193, 215, 244);*/
+    background-color: #f5f6f7;
 }
 .navbar-collapse
 {
@@ -69,27 +70,26 @@
     padding: 40px;
 
 }
-.experiencia span{
+.experiencia i{
     font-size: 2.5rem;
     color:whitesmoke;
     background-color: black;
     padding: 8px;
     border-radius: 50%;
+    margin-top: 0rem;
 }
+/*
 .experiencia .row div{
     height: 250px;
     background-color: rgb(226, 180, 226);
     border: 3px solid;
 }
+*/
 .experiencia_titulo{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Rubik Gemstones', cursive;
 }
 
-.columna{
-    
-}
 /*Estilos generales*/
 
 section{
@@ -131,6 +131,9 @@ h1{
     .navbar-brand{
         display: none;
     }
+    .experiencia i{
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (min-widht: 700px){
@@ -138,6 +141,7 @@ h1{
        max-width: 600px;
     }
 }
+
 
 /*iconos online de Google Icons*/
 .material-symbols-outlined {
@@ -147,4 +151,3 @@ h1{
     'GRAD' 0,
     'opsz' 48
   }
-
