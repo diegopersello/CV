@@ -117,12 +117,6 @@
     display: block;
     transition: all 0.2s ease;
   }
-  
-.contenedor_proyectos {
-    padding-top: 60px;
-    margin-bottom: 40px;
-    
-  }
 
 .overlay {
     transition: all 0.2s ease;
@@ -132,11 +126,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.overlay .contenedor_iconos{
-    display: inline-flex;
-
 }
 
 .overlay i{
@@ -159,13 +148,6 @@
     opacity: 1;
   }
 
-.texto_negro{
-    color: black;
-}
-.texto_blanco{
-    color: white;
-}
-
 /*Estilos generales*/
 
 section{
@@ -181,6 +163,13 @@ h1{
 
 }
 
+.texto_negro{
+    color: black;
+}
+.texto_blanco{
+    color: white;
+}
+  
 .seccion_oscura{
     color: white;
     background: #1b1b32;
