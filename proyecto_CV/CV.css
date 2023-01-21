@@ -51,14 +51,6 @@
 
 /*Seccion sobre mi*/
 
-.sobre_mi{
-    padding: 10px;
-}
-
-.sobre_mi .contenedor{
-    max-width: 600px;
-    text-align: center;
-}
 
 .imagen_desarrollo{
     padding: 1rem;
@@ -148,6 +140,22 @@
     opacity: 1;
   }
 
+
+/*Seccion contacto*/
+.segundo_contenedor{
+    padding: 10px;
+    color: rgb(1, 1, 1);
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-turquesa_125540-1259.jpg?w=2000");
+}
+
+.contenedor_iconos i{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    justify-content: center;
+}
+
 /*Estilos generales*/
 
 section{
@@ -163,6 +171,10 @@ h1{
 
 }
 
+li{
+    margin-bottom: 15px;
+}
+
 .texto_negro{
     color: black;
 }
@@ -173,15 +185,15 @@ h1{
 .seccion_oscura{
     color: white;
     background: #1b1b32;
+    padding: 10px;
 
 }
 .seccion_clara{
     color: #1b1b32;
     background-color: white;
 }
-.seccion_titulo{
-    font-size: 2rem;
-    padding: 15px 0;
+.titulo_estudios{
+    font-size: 3rem;
     font-family: 'Rubik Gemstones', cursive;
 }
 
@@ -195,6 +207,13 @@ h1{
     color: #584e4e;
     padding-bottom: 1rem;
 }
+
+.contenedor{
+    max-width: 800px;
+    text-align: left;
+    margin: 30px;
+}
+
 /* Adaptable responsivo*/
 /*con este media query escondo el ícono en pantallas pequeñas para que no quede mal*/
 @media screen and (max-width:767px){
