@@ -7,6 +7,7 @@
     /*padding: 2rem;*/
     background-color: rgb(185, 225, 216);
     color: rgb(107, 98, 236);
+    padding: 0;
 }
 .navbar-collapse
 {
@@ -14,12 +15,14 @@
     justify-content: space-between;
     font-size: 1.2rem;
     color: rgb(107, 98, 236);
+    padding: 0;
 }
 
 .Logo_navbar
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(107, 98, 236);
+    padding: 0;
 }
 
 /*seccion hero (principal)*/
@@ -157,6 +160,10 @@
 
 /*Estilos generales*/
 
+body {
+    padding:0px;
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -170,26 +177,16 @@ h1{
 
 }
 
-
 a:link,:visited {
     color: black; 
     font-family: arial; 
     text-decoration: none;
 }
 
-
 .enlace i{
     color:  white;
 }
 
-.texto_negro h2{
-    color: black;
-
-}
-.texto_blanco{
-    color: white;
-}
-  
 .seccion_oscura{
     color: white;
     background: rgb(62, 42, 40);
@@ -205,44 +202,17 @@ a:link,:visited {
     background-color: rgb(246, 191, 150);
 }
 
-.seccion_texto{
-    font-size: 1rem;
-
-}
-
-.seccion_descripcion{
-    font-size: 1.2rem;
-    color: black;
-    padding-bottom: 1rem;
-    font-family: 'Rubik Gemstones', cursive;
-}
-
 .contenedor{
     max-width: 800px;
     text-align: left;
     margin: 30px;
 }
 
-
-
-/* Adaptable responsivo*/
-/*con este media query escondo el ícono en pantallas pequeñas para que no quede mal*/
-@media screen and (max-width:767px){
-    .navbar-brand{
-        display: none;
-    }
-}
-
-@media screen and (min-widht: 700px){
-    .hero_inferior{
-       max-width: 600px;
-    }
-}
-
-@media (max-width: 289px) {
-    .overlay p {
-      display: none;
-    }
+#clock {
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-weight: bold;
   }
 
 
@@ -269,3 +239,25 @@ a:link,:visited {
     width:100%;
     position:absolute;
 }
+
+
+/* Adaptable responsivo*/
+/*con este media query escondo el ícono en pantallas pequeñas para que no quede mal*/
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and (min-widht: 700px){
+    .hero_inferior{
+       max-width: 600px;
+    }
+}
+
+@media (max-width: 289px) {
+    .overlay p {
+      display: none;
+    }
+  }
+
