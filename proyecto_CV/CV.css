@@ -263,3 +263,18 @@ li{
     'GRAD' 0,
     'opsz' 48
   }
+
+/*Video responsivo*/
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:400px; /* Adecua este valor para controlar la altura del video */
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
