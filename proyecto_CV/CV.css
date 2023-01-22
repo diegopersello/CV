@@ -6,11 +6,14 @@
 {
     /*padding: 2rem;*/
     background-color: rgb(185, 225, 216);
+    color: rgb(107, 98, 236);
 }
 .navbar-collapse
 {
     align-items: center;
     justify-content: space-between;
+    font-size: 1.2rem;
+    color: rgb(107, 98, 236);
 }
 
 .Logo_navbar
@@ -179,10 +182,6 @@ a:link,:visited {
     color:  white;
 }
 
-li{
-    margin-bottom: 15px;
-}
-
 .texto_negro h2{
     color: black;
 
@@ -204,10 +203,6 @@ li{
 .seccion_salmon{
     color: #1b1b32;
     background-color: rgb(246, 191, 150);
-}
-.titulo_estudios{
-    font-size: 3rem;
-    font-family: 'Rubik Gemstones', cursive;
 }
 
 .seccion_texto{
