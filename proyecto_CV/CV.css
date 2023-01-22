@@ -4,7 +4,7 @@
 /*Barra de navegacion*/
 .navbar
 {
-    padding: 2rem;
+    /*padding: 2rem;*/
     background-color: rgb(185, 225, 216);
 }
 .navbar-collapse
@@ -55,33 +55,29 @@
     padding: 1rem;
 }
 
-/* Seccion Experiencia */
+/* Seccion habilidades */
 
-.experiencia{
-    padding: 40px;
-
-}
-.experiencia i{
+.habilidades i{
     font-size: 2.5rem;
     color: rgb(79, 175, 145);
     background-color:rgb(188, 228, 219);
     padding: 8px;
     border-radius: 50%;
     margin-top: 0rem;
-    border: solid;
+    border: solid  rgb(130, 128, 127);
 }
-.experiencia_titulo{
+.habilidades_titulo{
     font-size: 20px;
     font-family: 'Rubik Gemstones', cursive;
 }
 
-.experiencia .columna {
+.habilidades .columna {
     border: 2px solid #8080804d;
     padding: 7px;
     transition: all 0.2s ease-in;
   }
 
-  .experiencia .columna:hover {
+  .habilidades .columna:hover {
     color: white;
     background: rgb(62, 42, 40);
   }
@@ -265,13 +261,13 @@ li{
   }
 
 /*Video responsivo*/
-.video-responsive {
+.video-responsivo {
     overflow:hidden;
     padding-bottom:400px; /* Adecua este valor para controlar la altura del video */
     position:relative;
     height:0;
 }
-.video-responsive iframe{
+.video-responsivo iframe{
     left:0;
     top:0;
     height:100%;

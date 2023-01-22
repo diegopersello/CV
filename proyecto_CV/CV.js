@@ -12,3 +12,8 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
   }); 
+
+  setInterval(function(){
+    var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById("derechos_autor").style.backgroundColor = randomColor;
+ }, 5000);
