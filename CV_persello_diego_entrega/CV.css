@@ -1,0 +1,263 @@
+/*importo el url de bootstrap Icons*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/*Barra de navegacion*/
+.navbar
+{
+    /*padding: 2rem;*/
+    background-color: rgb(185, 225, 216);
+    color: rgb(107, 98, 236);
+    padding: 0;
+}
+.navbar-collapse
+{
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: rgb(107, 98, 236);
+    padding: 0;
+}
+
+.Logo_navbar
+{
+    font-size: 1.5rem;
+    color: rgb(107, 98, 236);
+    padding: 0;
+}
+
+/*seccion hero (principal)*/
+
+.imagen_perfil
+{
+    border-radius: 50%;
+    background-size: cover;
+    margin: 20px;
+    border: black;
+}
+
+.hero
+{
+    background-color: rgb(127, 196, 180);
+    min-height: 450px;
+    text-align: center;
+
+}
+
+.hero_principal
+{
+    padding: 1rem;
+}
+
+.hero_principal h2{
+    font-size: 1.5rem;
+    color: rgb(59, 61, 61);
+    
+}
+
+/*Seccion sobre mi*/
+
+
+.imagen_desarrollo{
+    padding: 1rem;
+}
+
+/* Seccion habilidades */
+
+.habilidades i{
+    font-size: 2.5rem;
+    color: rgb(79, 175, 145);
+    background-color:rgb(188, 228, 219);
+    padding: 8px;
+    border-radius: 50%;
+    margin-top: 0rem;
+    border: solid  rgb(130, 128, 127);
+}
+.habilidades_titulo{
+    font-size: 20px;
+    font-family: 'Rubik Gemstones', cursive;
+}
+
+.habilidades .columna {
+    border: 2px solid #8080804d;
+    padding: 7px;
+    transition: all 0.2s ease-in;
+  }
+
+  .habilidades .columna:hover {
+    color: white;
+    background: rgb(62, 42, 40);
+  }
+
+.contenedor_badges {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge{
+    margin: 3px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Seccion proyectos*/
+
+.proyecto{
+    position: relative;
+}
+.proyectos_recientes img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+    border: solid;
+    border-color: rgb(62, 42, 40);
+  }
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay i{
+    font-size: 50px;
+    color: black;
+    margin: 2rem;
+}
+
+.overlay p{
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+  }
+
+
+/*Seccion contacto*/
+.segundo_contenedor{
+    color: rgb(1, 1, 1);
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-turquesa_125540-1259.jpg?w=2000");
+}
+
+.contenedor_iconos i{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    justify-content: center;
+}
+
+/*Estilos generales*/
+
+body {
+    padding:0px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem; /*rem: 2.5* el tamaño de letra del elemento raíz*/
+    font-family: 'Rubik Gemstones', cursive;
+
+}
+
+a:link,:visited {
+    color: black; 
+    font-family: arial; 
+    text-decoration: none;
+}
+
+.enlace i{
+    color:  white;
+}
+
+.seccion_oscura{
+    color: white;
+    background: rgb(62, 42, 40);
+    padding: 10px;
+
+}
+.seccion_clara{
+    color: #1b1b32;
+    background-color: rgb(217, 226, 230);
+}
+.seccion_salmon{
+    color: #1b1b32;
+    background-color: rgb(246, 191, 150);
+}
+
+.contenedor{
+    max-width: 800px;
+    text-align: left;
+    margin: 30px;
+}
+
+#reloj {
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+
+
+/*iconos online de Google Icons*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+/*Video responsivo*/
+.video-responsivo {
+    overflow:hidden;
+    padding-bottom:400px; /* Adecua este valor para controlar la altura del video */
+    position:relative;
+    height:0;
+}
+.video-responsivo iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+/* Adaptable responsivo*/
+/*con este media query escondo el ícono en pantallas pequeñas para que no quede mal*/
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and (min-widht: 700px){
+    .hero_inferior{
+       max-width: 600px;
+    }
+}
+
+@media (max-width: 289px) {
+    .overlay p {
+      display: none;
+    }
+  }
+
