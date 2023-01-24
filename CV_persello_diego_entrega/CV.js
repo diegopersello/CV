@@ -34,24 +34,24 @@ reloj.style.top = window.pageYOffset + "px";
 /* funcion para scrolear el navbar y que los href se coloquen en la posicion 
 correcta para no ser tapados */
 document.addEventListener("DOMContentLoaded", function(){
-// Obtener el tamaño del navbar
-var navbar = document.querySelector(".navbar");
-var navbar_height = navbar.offsetHeight;
-
-// Agregar un evento click a todos los enlaces con href
-var links = document.querySelectorAll("a[href^='#']");
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function(e){
-    e.preventDefault();
-    var target = this.getAttribute("href");
-    var target_element = document.querySelector(target);
-    var offset = target_element.offsetTop;
-
-    // Desplazarse hasta el elemento con un margen de tamaño del navbar
-    window.scrollTo({
-      top: offset - navbar_height,
-      behavior: "smooth"
+  // Obtener el tamaño del navbar
+  var navbar = document.querySelector(".navbar");
+  var navbar_height = navbar.offsetHeight;
+  
+  // Agregar un evento click a todos los enlaces con href
+  var links = document.querySelectorAll("a[href^='#']");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function(e){
+      e.preventDefault();
+      var target = this.getAttribute("href");
+      var target_element = document.querySelector(target);
+      var offset = target_element.offsetTop;
+  
+      // Desplazarse hasta el elemento con un margen de tamaño del navbar
+      window.scrollTo({
+        top: offset - navbar_height,
+        behavior: "smooth"
+      });
     });
+  }
   });
-}
-});
