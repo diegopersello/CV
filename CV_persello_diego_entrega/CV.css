@@ -162,6 +162,9 @@ body {
     padding:0px;
 }
 
+.parrafo_final{
+    margin: 0;
+}
 section{
     display: flex;
     flex-direction: column;
