@@ -1,5 +1,28 @@
 /*importo el url de bootstrap Icons*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*importo API de google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.flechita{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+  }
+  .flechita a{
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #1b1b1b;
+    display: block;
+    border-radius: 3px;
+  }
+  .flechita a span{
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 39px;
+    cursor: pointer;
+  }
 
 /*Barra de navegacion*/
 .navbar
@@ -38,12 +61,35 @@
     background-color: rgb(127, 196, 180);
     min-height: 450px;
     text-align: center;
-
+    animation: change_transparency 7s;
 }
 
 .hero_principal
 {
     padding: 1rem;
+}
+
+@keyframes change_transparency{
+    0% {
+        filter: grayscale(100%);
+       
+      }
+      100% {
+        filter: grayscale(0%);
+      }
+}
+
+.derechos_autor i, .derechos_autor p{
+    animation: on_off 1.5s infinite;
+}
+
+@keyframes on_off{
+    0% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
 }
 
 .hero_principal h2{
@@ -69,7 +115,21 @@
     border-radius: 50%;
     margin-top: 0rem;
     border: solid  rgb(130, 128, 127);
+    transition: all 2s;
+    animation: spin 3s infinite;
 }
+@keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+      }
+    100% {
+      transform: rotateY(360deg);
+    }
+}
+
 .habilidades_titulo{
     font-size: 20px;
     font-family: 'Rubik Gemstones', cursive;
@@ -141,7 +201,6 @@
     opacity: 1;
   }
 
-
 /*Seccion contacto*/
 .segundo_contenedor{
     color: rgb(1, 1, 1);
@@ -154,17 +213,27 @@
     margin: 10px 0;
     padding: 10px;
     justify-content: center;
+    animation: signal 3s infinite;
+}
+
+@keyframes signal{
+    0% {
+       box-shadow: 0 0 0 0 #ffffff
+      }
+      100% {
+        box-shadow: 0 0 0 0.2rem #7f7f7f;
+      }
 }
 
 /*Estilos generales*/
 
+li{
+    margin-bottom: 10px;
+}
 body {
     padding:0px;
 }
 
-.parrafo_final{
-    margin: 0;
-}
 section{
     display: flex;
     flex-direction: column;
@@ -186,6 +255,8 @@ a:link,:visited {
 
 .enlace i{
     color:  white;
+    background-color: transparent;
+    animation: signal 1.5s infinite;
 }
 
 .seccion_oscura{
@@ -207,6 +278,20 @@ a:link,:visited {
     max-width: 800px;
     text-align: left;
     margin: 30px;
+}
+
+.estudios{
+    animation: change_color 4s infinite;
+}
+
+@keyframes change_color{
+    0% {
+       background-color:rgb(62, 42, 40);
+       
+      }
+      100% {
+        background-color:#52505c;
+      }
 }
 
 #reloj {
@@ -245,17 +330,10 @@ a:link,:visited {
 }
 
 
-/* Adaptable responsivo*/
-/*con este media query escondo el ícono en pantallas pequeñas para que no quede mal*/
+/* Algunos mediaquery para mejorar la adaptación a pantallas más pequeñas*/
 @media screen and (max-width:767px){
-    .navbar-brand{
-        display: none;
-    }
-}
-
-@media screen and (min-widht: 700px){
-    .hero_inferior{
-       max-width: 600px;
+    .navegacion {
+        padding-top: 2%;
     }
 }
 
@@ -263,4 +341,13 @@ a:link,:visited {
     .overlay p {
       display: none;
     }
-  }
+    .proyecto i,a{
+        font-size: 30px;
+    }
+}
+@media (max-width: 338px) {
+    .contenedor_iconos i{
+        font-size: 1rem;
+    
+    }
+}
