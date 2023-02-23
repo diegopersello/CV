@@ -69,7 +69,11 @@
     border-radius: 50%;
     margin-top: 0rem;
     border: solid  rgb(130, 128, 127);
+    transition: all 2s;
+    animation: spin 3s infinite;
+
 }
+
 .habilidades_titulo{
     font-size: 20px;
     font-family: 'Rubik Gemstones', cursive;
@@ -141,7 +145,6 @@
     opacity: 1;
   }
 
-
 /*Seccion contacto*/
 .segundo_contenedor{
     color: rgb(1, 1, 1);
@@ -154,10 +157,14 @@
     margin: 10px 0;
     padding: 10px;
     justify-content: center;
+    animation: signal 3s infinite;
 }
 
 /*Estilos generales*/
 
+li{
+    margin-bottom: 10px;
+}
 body {
     padding:0px;
 }
@@ -183,6 +190,8 @@ a:link,:visited {
 
 .enlace i{
     color:  white;
+    background-color: transparent;
+    animation: signal 1.5s infinite;
 }
 
 .seccion_oscura{
@@ -242,17 +251,10 @@ a:link,:visited {
 }
 
 
-/* Adaptable responsivo*/
-/*con este media query escondo el ícono en pantallas pequeñas para que no quede mal*/
+/* Algunos mediaquery para mejorar la adaptación a pantallas más pequeñas*/
 @media screen and (max-width:767px){
-    .navbar-brand{
-        display: none;
-    }
-}
-
-@media screen and (min-widht: 700px){
-    .hero_inferior{
-       max-width: 600px;
+    .navegacion {
+        padding-top: 2%;
     }
 }
 
@@ -260,5 +262,55 @@ a:link,:visited {
     .overlay p {
       display: none;
     }
-  }
+    .proyecto i,a{
+        font-size: 30px;
+    }
+}
+@media (max-width: 338px) {
+    .contenedor_iconos i{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10px 0;
+        padding: 10px;
+        justify-content: center;
+        animation: signal 3s infinite;
+    
+    }
+}
 
+/*Algunos keyframes para animar la página*/
+  @keyframes signal{
+    0% {
+       box-shadow: 0 0 0 0 #ffffff
+      }
+      100% {
+        box-shadow: 0 0 0 0.2rem #7f7f7f;
+      }
+}
+
+@keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+      }
+    100% {
+      transform: rotateY(360deg);
+    }
+}
+
+@keyframes door_in {
+    0% {
+      transform: rotateY(0deg);
+      transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateY(15deg);
+        transform: rotateX(15deg);
+      }
+    100% {
+        transform: rotateY(30deg);
+        transform: rotateX(30deg);
+    }
+}
