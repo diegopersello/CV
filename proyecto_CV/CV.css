@@ -1,5 +1,28 @@
 /*importo el url de bootstrap Icons*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*importo API de google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.flechita{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+  }
+  .flechita a{
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #1b1b1b;
+    display: block;
+    border-radius: 3px;
+  }
+  .flechita a span{
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 39px;
+    cursor: pointer;
+  }
 
 /*Barra de navegacion*/
 .navbar
@@ -56,7 +79,7 @@
       }
 }
 
-.derechos_autor i,p{
+.derechos_autor i, .derechos_autor p{
     animation: on_off 1.5s infinite;
 }
 

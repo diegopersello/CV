@@ -22,8 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
 <body>
+  <!-- boton para ir al inicio-->
+  <div class="flechita">
+    <a href="#inicio" title="ir_arriba"><span class="fas fa-angle-up"></span></a>
+ </div>
   <!-- barra de navegacion sticky con bootstrap-->
   <nav id="navbar_top" class="navbar navbar-expand-md navbar-light sticky-top">
       <div class="container-fluid navegacion" ><!-- se ajusta al 100% del navegador-->
@@ -54,7 +60,7 @@
   </nav>
   <!-- Seccion Hero -->
   <section class="hero align-items-stretch">
-      <div class="hero_principal d-flex flex-column justify-content-center align-items-center">
+      <div id="inicio" class="hero_principal d-flex flex-column justify-content-center align-items-center">
           <img class="imagen_perfil" src="imagenes-iconos/cv_2022.png" alt="perfil">
           <h1>Hola, soy Diego Persello</h1>
           <h2>Desarrollo aplicaciones para sistemas android y sitios web</h2>   
