@@ -55,16 +55,3 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }
 });
-
-
-var button = document.querySelector('.navbar-toggler[data-bs-target="#navbar-toggler"]');
-
-document.querySelectorAll('.navbar-nav li a').forEach(function(link) {
-  link.addEventListener('click', function() {
-    if (button.getAttribute('aria-expanded') === 'true') {
-      button.setAttribute('aria-expanded', 'false');
-    } else {
-      button.setAttribute('aria-expanded', 'true');
-    }
-  });
-});

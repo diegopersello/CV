@@ -38,12 +38,35 @@
     background-color: rgb(127, 196, 180);
     min-height: 450px;
     text-align: center;
-
+    animation: change_transparency 7s;
 }
 
 .hero_principal
 {
     padding: 1rem;
+}
+
+@keyframes change_transparency{
+    0% {
+        filter: grayscale(100%);
+       
+      }
+      100% {
+        filter: grayscale(0%);
+      }
+}
+
+.derechos_autor i,p{
+    animation: on_off 1.5s infinite;
+}
+
+@keyframes on_off{
+    0% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
 }
 
 .hero_principal h2{
@@ -71,7 +94,17 @@
     border: solid  rgb(130, 128, 127);
     transition: all 2s;
     animation: spin 3s infinite;
-
+}
+@keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+      }
+    100% {
+      transform: rotateY(360deg);
+    }
 }
 
 .habilidades_titulo{
@@ -160,6 +193,15 @@
     animation: signal 3s infinite;
 }
 
+@keyframes signal{
+    0% {
+       box-shadow: 0 0 0 0 #ffffff
+      }
+      100% {
+        box-shadow: 0 0 0 0.2rem #7f7f7f;
+      }
+}
+
 /*Estilos generales*/
 
 li{
@@ -213,6 +255,20 @@ a:link,:visited {
     max-width: 800px;
     text-align: left;
     margin: 30px;
+}
+
+.estudios{
+    animation: change_color 4s infinite;
+}
+
+@keyframes change_color{
+    0% {
+       background-color:rgb(62, 42, 40);
+       
+      }
+      100% {
+        background-color:#52505c;
+      }
 }
 
 #reloj {
@@ -269,48 +325,6 @@ a:link,:visited {
 @media (max-width: 338px) {
     .contenedor_iconos i{
         font-size: 1rem;
-        font-weight: bold;
-        margin: 10px 0;
-        padding: 10px;
-        justify-content: center;
-        animation: signal 3s infinite;
     
-    }
-}
-
-/*Algunos keyframes para animar la página*/
-  @keyframes signal{
-    0% {
-       box-shadow: 0 0 0 0 #ffffff
-      }
-      100% {
-        box-shadow: 0 0 0 0.2rem #7f7f7f;
-      }
-}
-
-@keyframes spin {
-    0% {
-      transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-      }
-    100% {
-      transform: rotateY(360deg);
-    }
-}
-
-@keyframes door_in {
-    0% {
-      transform: rotateY(0deg);
-      transform: rotateX(0deg);
-    }
-    50% {
-        transform: rotateY(15deg);
-        transform: rotateX(15deg);
-      }
-    100% {
-        transform: rotateY(30deg);
-        transform: rotateX(30deg);
     }
 }
